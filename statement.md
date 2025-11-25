@@ -1,31 +1,37 @@
-Problem Statement
-Create a Python program that generates a random password of user-defined length.
-The password should contain a mix of lowercase and uppercase letters, digits, and special characters.
+##  **Statement File: Python Password Generator**
+##   **Problem Statement**
+Write a Python script that generates a random, secure password based on user input.
+The script must use all four types of characters: lowercase letters, uppercase letters, digits, and punctuation.
 
-Requirements
-Prompt the user to input the desired password length.
+##    **Requirements**
+The script should prompt the user for the desired password length.
 
-Validate the user’s input and ensure the length is a positive integer.
+It should validate the input, ensuring:
 
-If the input is not numeric or non-positive, prompt the user again.
-The generated password must:
+The length is a positive integer.
 
-Be randomly selected from lowercase, uppercase, digits, and punctuation characters.
+The length does not exceed the total number of available unique characters.
 
-Be exactly the length entered by the user.
+The generated password should contain randomly selected characters from all four sets (lowercase, uppercase, digits, punctuation).
 
-Display the generated password to the user.
+The password should be displayed to the user.
 
-Constraints
-Use the string and random Python modules.
+##  **Constraints**
+Only built-in Python modules may be used.
 
-The password length should be greater than zero.
+The script should handle invalid input (non-integer, negative numbers, or numbers that are too large) gracefully by re-prompting the user.
 
-All input handling must be robust (no crashes with gibberish/non-numeric input).
+##    **Example Input & Output**
+``Input:``
 
-Notes
-The password is generated randomly and may differ each time.
 
-You should run the script from the terminal or command line.
+Enter password length:
+8
 
-For better security, consider secrets module instead of random for real-world use
+  ``Output:``
+
+
+Your password is:
+aP7#yW2!
+##     **Optional Enhancement**
+For bonus points, implement the password generation using Python’s secrets module for cryptographically secure randomness.
